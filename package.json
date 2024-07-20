@@ -1,0 +1,12 @@
+{
+    "name": "color-see",
+    "version": "1.0.0",
+    "description": "Adjust webpage colors for different types of color blindness.",
+    "scripts": {
+        "build": "tsc"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.268",
+        "typescript": "^4.0.0"
+    }
+}

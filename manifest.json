@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "ColorSee",
+    "description": "Extension for Google Chrome, which implements changing page colors according to the user's type of color blindness",
+    "version": "1.0",
+    "permissions": ["storage", "activeTab", "scripting"],
+    "background": {
+        "service_worker": "dist/background.js"
+    },  
+    "action": {
+        "default_popup": "src/popup/popup.html"
+    },
+    "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["dist/content.js"]
+    }
+  ]
+}
